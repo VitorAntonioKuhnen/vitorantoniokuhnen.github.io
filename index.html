@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Verificador de Nomes</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,12 +14,17 @@
 <body>
     <h1 id="titulo">Verificador de Nomes</h1>
     <p id="desc">Verifica a quantidade de pessoas registradas com o mesmo nome conforme o periodo</p>
+    <p id="descIbge"> Dados retirados do IBGE</p>
     <div id="btInput">
         <div id="nmInput">
             <p id="name">Nome:</p>
-            
+
         </div>
-        <input type="search" id="edNome" placeholder="Ex: Pedro">
+        <form id="form">
+            <input type="search" id="edNome" placeholder="Ex: Pedro">
+            <p id="erro"></p>
+        </form>
+
         <button onclick="Buscar()" id="btBuscar">Buscar Nome</button>
     </div>
     <div>
@@ -33,7 +39,6 @@
 
         </tbody>
     </table>
-
 </body>
 
 </html>
